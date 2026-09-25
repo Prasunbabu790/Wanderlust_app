@@ -16,7 +16,9 @@ const initDB = async () => {
     initData.data = initData.data.map((obj) => ({
     ...obj,
     image: obj.image ? obj.image.url || obj.image : undefined,
-  }));
+    owner: "6ab60d81dfd56a48ab651c72"
+    }));
+    initData.data
     await Listing.insertMany(initData.data);
     console.log("data was initialized");
 };
