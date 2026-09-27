@@ -48,9 +48,9 @@ const sessionOptions = {
 };
 
 // Index Route
-app.get("/", (req, res) => {
-    res.send("Hi, I am root")
-});
+// app.get("/", (req, res) => {
+//     res.send("Hi, I am root")
+// });
 
 // Using Express Session & Flash
 app.use(session(sessionOptions));
